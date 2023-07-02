@@ -3,7 +3,7 @@ jenkins:
 
 unclassified:
   location:
-    url: "https://github.com/Gitesh-Jawale/sre-jenkins-JCasC.git/jenkins"
+    url: "https://8a38-103-86-182-219.ngrok-free.app/jenkins"
 
 jobs:
   - script: |
