@@ -1,0 +1,29 @@
+jenkins:
+  systemMessage: "Welcome to Jenkins Configuration as a Code"
+
+unclassified:
+  location:
+    url: "http://localhost:8080/jenkins"
+
+jobs:
+  - script: |
+      pipeline {
+        agent any
+        stages {
+          stage('Build') {
+            steps {
+              sh 'echo "Building..."'
+            }
+          }
+          stage('Test') {
+            steps {
+              sh 'echo "Testing..."'
+            }
+          }
+          stage('Deploy') {
+            steps {
+              sh 'echo "Deploying..."'
+            }
+          }
+        }
+      }
