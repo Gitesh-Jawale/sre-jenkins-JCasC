@@ -3,7 +3,7 @@ jenkins:
 
 unclassified:
   location:
-    url: "http://localhost:8080/jenkins"
+    url: "https://github.com/Gitesh-Jawale/sre-jenkins-JCasC.git/jenkins"
 
 jobs:
   - script: |
