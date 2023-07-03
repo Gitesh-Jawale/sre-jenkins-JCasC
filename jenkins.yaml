@@ -1,6 +1,6 @@
 jenkins:
   systemMessage: "Jenkins configured automatically by Jenkins Configuration as Code plugin\n\n"
-  numExecutors: 8
+  numExecutors: 3
   scmCheckoutRetryCount: 2
   mode: NORMAL
 
@@ -9,3 +9,20 @@ jenkins:
         env:
           - key: FOO
             value: BAR
+  # nodes:
+  #   permanent:
+  #     name: "Slave-3"
+  #     remoterFS: "C:\Gitesh-2\asda"
+  #     lables: "Windows"
+  #     numExecuters: 3  
+
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: "newuser"
+          password: "password"
+          fullName: "New User"
+          permissions:
+            - "Overall/Read"
+            - "Job/Configure"  
